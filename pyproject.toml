@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ninja-narrator"
+version = "1.0.0"
+description = "Interface local e open source para narração com clonagem de voz por IA."
+readme = "README.md"
+requires-python = ">=3.10,<3.12"
+license = { text = "MIT" }
+authors = [{ name = "NinjaSoft" }]
+keywords = ["text-to-speech", "xtts", "voice-cloning", "tts", "narration"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "customtkinter==5.2.2",
+    "Pillow>=10.4,<12",
+    "numpy>=1.24,<2",
+    "librosa>=0.10.2,<0.12",
+    "soundfile>=0.12,<0.14",
+    "TTS==0.22.0",
+]
+
+[project.scripts]
+ninja-narrator = "ninja_narrator.cli:main"
+ninja-narrator-gui = "ninja_narrator.gui_app:main"
+
+[project.urls]
+Homepage = "https://github.com/ninjasoft-dev/ninja-narrator"
+Repository = "https://github.com/ninjasoft-dev/ninja-narrator"
+Issues = "https://github.com/ninjasoft-dev/ninja-narrator/issues"
+
+[tool.setuptools.packages.find]
+include = ["ninja_narrator*"]
+
+[tool.setuptools.package-data]
+ninja_narrator = ["assets/*.png"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+addopts = "-q --strict-markers"
+testpaths = ["tests"]

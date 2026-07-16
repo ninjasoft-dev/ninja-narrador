@@ -1,0 +1,12 @@
+[narrator]
+input_dir = "input_texts"
+output_dir = "output_audio"
+reference_dir = "reference_audio"
+model_name = "tts_models/multilingual/multi-dataset/xtts_v2"
+language = "pt"
+device = "auto"
+reference_mode = "single"
+speed = 1.0
+
+# Use somente quando precisar que todos os áudios tenham duração exata.
+# target_duration = 30.0
