@@ -3,7 +3,7 @@
   <h1>Ninja Narrator</h1>
   <p>Narração local com clonagem de voz por IA, interface desktop e automação por CLI.</p>
 
-  [![Quality](https://github.com/ninjasoft-dev/ninja-narrator/actions/workflows/quality.yml/badge.svg)](https://github.com/ninjasoft-dev/ninja-narrator/actions/workflows/quality.yml)
+  [![Quality](https://github.com/ninjasoft-dev/ninja-narrador/actions/workflows/quality.yml/badge.svg)](https://github.com/ninjasoft-dev/ninja-narrador/actions/workflows/quality.yml)
   [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11-3776AB?logo=python&logoColor=white)](https://www.python.org/)
   [![License: MIT](https://img.shields.io/badge/code-MIT-55D6A3.svg)](LICENSE)
   [![Model: CPML](https://img.shields.io/badge/XTTS--v2-uso%20não%20comercial-9D72EF.svg)](THIRD_PARTY_NOTICES.md)
@@ -13,7 +13,8 @@
 
 O Ninja Narrator transforma textos em arquivos WAV usando amostras de uma voz
 autorizada. A síntese roda no próprio computador com o XTTS-v2; textos e vozes
-não são enviados a uma API externa.
+não são enviados a uma API externa. O backend usa o fork mantido `coqui-tts`,
+preservando a API do XTTS-v2 sem depender do pacote original descontinuado.
 
 ## Destaques
 
@@ -38,17 +39,18 @@ não são enviados a uma API externa.
 | GPU | CPU é aceita, mas lenta | NVIDIA RTX com 8 GB+ de VRAM |
 
 O caminho CUDA deste repositório requer uma GPU NVIDIA e drivers compatíveis.
-Foi validado em uma **GeForce RTX 5070 Ti com 16 GB**, PyTorch 2.7.1 e CUDA
-12.8. Outras GPUs podem exigir uma combinação diferente de PyTorch/CUDA. Em CPU,
-o projeto funciona, mas uma narração pode levar muito mais tempo.
+Foi validado em uma **GeForce RTX 5070 Ti com 16 GB**, PyTorch 2.11, TorchCodec
+0.15 e CUDA 12.8. Outras GPUs podem exigir uma combinação diferente de
+PyTorch/CUDA. Em CPU, o projeto funciona, mas uma narração pode levar muito mais
+tempo.
 
 ## Instalação no Windows
 
 Clone o repositório e execute o instalador para NVIDIA/CUDA:
 
 ```powershell
-git clone https://github.com/ninjasoft-dev/ninja-narrator.git
-cd ninja-narrator
+git clone https://github.com/ninjasoft-dev/ninja-narrador.git
+cd ninja-narrador
 powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
 

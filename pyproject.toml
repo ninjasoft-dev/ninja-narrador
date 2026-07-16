@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=75", "wheel"]
+requires = ["setuptools>=83", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "ninja-narrator"
-version = "1.0.1"
+version = "1.0.2"
 description = "Interface local e open source para narração com clonagem de voz por IA."
 readme = "README.md"
 requires-python = ">=3.10,<3.12"
@@ -13,18 +13,26 @@ authors = [{ name = "NinjaSoft" }]
 keywords = ["text-to-speech", "xtts", "voice-cloning", "tts", "narration"]
 classifiers = [
     "Development Status :: 4 - Beta",
-    "License :: OSI Approved :: MIT License",
     "Natural Language :: Portuguese (Brazilian)",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
 ]
 dependencies = [
     "customtkinter==5.2.2",
-    "Pillow>=10.4,<12",
-    "numpy>=1.24,<2",
-    "librosa>=0.10.2,<0.12",
+    "Pillow>=12.3,<13",
+    "numpy>=1.26,<2",
+    "librosa>=0.11,<0.12",
     "soundfile>=0.12,<0.14",
-    "TTS==0.22.0",
+    "torch>=2.11,<2.12",
+    "torchaudio>=2.11,<2.12",
+    "torchcodec>=0.15,<0.16",
+    "coqui-tts==0.27.5",
+    "transformers==5.5.0",
+    "aiohttp>=3.14.1,<4",
+    "click>=8.3.3,<9",
+    "idna>=3.15,<4",
+    "msgpack>=1.2.1,<2",
+    "urllib3>=2.7,<3",
 ]
 
 [project.scripts]
@@ -32,9 +40,9 @@ ninja-narrator = "ninja_narrator.cli:main"
 ninja-narrator-gui = "ninja_narrator.gui_app:main"
 
 [project.urls]
-Homepage = "https://github.com/ninjasoft-dev/ninja-narrator"
-Repository = "https://github.com/ninjasoft-dev/ninja-narrator"
-Issues = "https://github.com/ninjasoft-dev/ninja-narrator/issues"
+Homepage = "https://github.com/ninjasoft-dev/ninja-narrador"
+Repository = "https://github.com/ninjasoft-dev/ninja-narrador"
+Issues = "https://github.com/ninjasoft-dev/ninja-narrador/issues"
 
 [tool.setuptools.packages.find]
 include = ["ninja_narrator*"]

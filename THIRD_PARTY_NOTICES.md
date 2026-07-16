@@ -3,9 +3,10 @@
 O código original do Ninja Narrator é distribuído sob a licença MIT. Modelos,
 bibliotecas e pesos baixados pela aplicação mantêm suas próprias licenças.
 
-## XTTS-v2
+## Coqui TTS e XTTS-v2
 
-- O projeto Coqui TTS é distribuído sob Mozilla Public License 2.0.
+- O backend utiliza o fork mantido `coqui-tts`, distribuído sob Mozilla Public
+  License 2.0.
 - Os pesos do XTTS-v2 e os resultados produzidos por eles estão sujeitos à
   Coqui Public Model License 1.0.0 (CPML).
 - A CPML do XTTS-v2 permite somente uso não comercial. Consulte o texto oficial
@@ -13,7 +14,10 @@ bibliotecas e pesos baixados pela aplicação mantêm suas próprias licenças.
 
 Licença do modelo: <https://huggingface.co/coqui/XTTS-v2/blob/main/LICENSE.txt>
 
-Código do Coqui TTS: <https://github.com/coqui-ai/TTS>
+Fork mantido: <https://github.com/idiap/coqui-ai-TTS>
+
+Repositório original, mantido apenas como referência histórica:
+<https://github.com/coqui-ai/TTS>
 
 ## Responsabilidade sobre vozes
 

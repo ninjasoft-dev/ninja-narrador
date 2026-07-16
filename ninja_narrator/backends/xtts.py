@@ -86,6 +86,16 @@ class XttsBackend:
         torch.load = compatible_load
 
     @staticmethod
+    def _patch_transformers_compatibility(torch: Any) -> None:
+        """Restaura o alias de conjunto removido no Transformers 5."""
+        try:
+            from transformers import pytorch_utils
+        except ImportError:
+            return
+        if not hasattr(pytorch_utils, "isin_mps_friendly"):
+            pytorch_utils.isin_mps_friendly = torch.isin
+
+    @staticmethod
     def _patch_typeguard_for_bundle() -> None:
         """Evita inspeção incompatível do typeguard em executáveis congelados."""
         if not getattr(sys, "frozen", False):
@@ -115,6 +125,8 @@ class XttsBackend:
         # A variável só é definida depois da confirmação explícita na GUI ou CLI.
         os.environ["COQUI_TOS_AGREED"] = "1"
         import torch
+
+        self._patch_transformers_compatibility(torch)
         from TTS.api import TTS
 
         self._patch_torch_checkpoint_loading(torch)

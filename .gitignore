@@ -9,8 +9,10 @@ dist/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.audit-cache/
 .coverage
 htmlcov/
+tmp/
 config.toml
 .env
 .env.*

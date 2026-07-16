@@ -33,6 +33,7 @@ $arguments = @(
     "--collect-all", "transformers",
     "--collect-all", "torch",
     "--collect-all", "torchaudio",
+    "--collect-all", "torchcodec",
     "--hidden-import", "TTS.tts.configs.xtts_config",
     "--hidden-import", "TTS.tts.models.xtts",
     ".\interface.py"
