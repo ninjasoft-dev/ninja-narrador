@@ -1,4 +1,4 @@
-"""Interface desktop do Ninja Narrator com identidade visual da NinjaSoft."""
+"""Interface desktop do NinjaSoft Narrator."""
 
 from __future__ import annotations
 
@@ -61,7 +61,7 @@ class NarratorApp(ctk.CTk):
         self.last_output: Path | None = None
         self.voice_tokens: dict[str, str] = {}
 
-        self.title("Ninja Narrator · NinjaSoft")
+        self.title("NinjaSoft Narrator")
         self.geometry("1180x820")
         self.minsize(1020, 720)
         self.grid_columnconfigure(1, weight=1)
@@ -123,7 +123,7 @@ class NarratorApp(ctk.CTk):
 
         ctk.CTkLabel(
             sidebar,
-            text="NINJA NARRATOR",
+            text="NINJASOFT NARRATOR",
             font=ctk.CTkFont(size=11, weight="bold"),
             text_color=COLORS["accent"],
         ).grid(row=1, column=0, padx=31, pady=(0, 36), sticky="w")
@@ -306,7 +306,7 @@ class NarratorApp(ctk.CTk):
         self.text_box.grid(row=3, column=0, padx=22, pady=(0, 20), sticky="ew")
         self.text_box.insert(
             "1.0",
-            "Bem-vindo ao Ninja Narrator. Transforme este texto em uma narração natural, "
+            "Bem-vindo ao NinjaSoft Narrator. Transforme este texto em uma narração natural, "
             "processada localmente com inteligência artificial.",
         )
 

@@ -1,4 +1,4 @@
-"""Núcleo do Ninja Narrator, narrador local e open source da NinjaSoft."""
+"""Núcleo do NinjaSoft Narrator, narrador local e open source da NinjaSoft."""
 
 from .config import NarratorConfig, load_config
 from .domain import NarrationRequest, NarrationResult, ReferenceMode, TextEntry

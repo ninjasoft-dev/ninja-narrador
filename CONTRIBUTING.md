@@ -1,6 +1,6 @@
 # Como contribuir
 
-Obrigado por ajudar o Ninja Narrator. Correções, documentação, novos testes e
+Obrigado por ajudar o NinjaSoft Narrator. Correções, documentação, novos testes e
 backends de síntese são bem-vindos.
 
 ## Preparação

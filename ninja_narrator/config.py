@@ -1,4 +1,4 @@
-"""Carregamento das configurações locais do Ninja Narrator."""
+"""Carregamento das configurações locais do NinjaSoft Narrator."""
 
 from __future__ import annotations
 

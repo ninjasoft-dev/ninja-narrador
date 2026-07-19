@@ -1,6 +1,6 @@
 # Arquitetura
 
-O Ninja Narrator separa interface, regras e mecanismo de síntese para evitar que
+O NinjaSoft Narrator separa interface, regras e mecanismo de síntese para evitar que
 decisões do XTTS-v2 se espalhem pelo projeto.
 
 ```text

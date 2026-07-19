@@ -1,6 +1,6 @@
 <div align="center">
   <img src="ninja_narrator/assets/ninjasoft-logo.png" alt="NinjaSoft" width="240">
-  <h1>Ninja Narrator</h1>
+  <h1>NinjaSoft Narrator</h1>
   <p>Narração local com clonagem de voz por IA, interface desktop e automação por CLI.</p>
 
   [![Quality](https://github.com/ninjasoft-dev/ninja-narrador/actions/workflows/quality.yml/badge.svg)](https://github.com/ninjasoft-dev/ninja-narrador/actions/workflows/quality.yml)
@@ -9,9 +9,9 @@
   [![Model: CPML](https://img.shields.io/badge/XTTS--v2-uso%20não%20comercial-9D72EF.svg)](THIRD_PARTY_NOTICES.md)
 </div>
 
-![Interface do Ninja Narrator](docs/assets/ninja-narrator-escuro.png)
+![Interface do NinjaSoft Narrator](docs/assets/ninja-narrator-escuro.png)
 
-O Ninja Narrator transforma textos em arquivos WAV usando amostras de uma voz
+O NinjaSoft Narrator transforma textos em arquivos WAV usando amostras de uma voz
 autorizada. A síntese roda no próprio computador com o XTTS-v2; textos e vozes
 não são enviados a uma API externa. O backend usa o fork mantido `coqui-tts`,
 preservando a API do XTTS-v2 sem depender do pacote original descontinuado.
@@ -131,7 +131,7 @@ A estrutura interna e os pontos de extensão estão em
 
 ## Licenças e uso responsável
 
-O **código do Ninja Narrator** é open source sob a [licença MIT](LICENSE). Isso
+O **código do NinjaSoft Narrator** é open source sob a [licença MIT](LICENSE). Isso
 permite estudar, modificar e trocar o backend do projeto.
 
 O **XTTS-v2 não usa a licença MIT**. Seus pesos e os resultados gerados por eles

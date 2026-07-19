@@ -1,6 +1,6 @@
 # Componentes de terceiros
 
-O código original do Ninja Narrator é distribuído sob a licença MIT. Modelos,
+O código original do NinjaSoft Narrator é distribuído sob a licença MIT. Modelos,
 bibliotecas e pesos baixados pela aplicação mantêm suas próprias licenças.
 
 ## Coqui TTS e XTTS-v2

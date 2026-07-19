@@ -25,7 +25,7 @@ if ($LASTEXITCODE -ne 0) { throw "Falha ao atualizar o pip." }
 & $venvPython -m pip install -r $requirements
 if ($LASTEXITCODE -ne 0) { throw "Falha ao instalar as dependências." }
 & $venvPython -m pip install -e . --no-deps
-if ($LASTEXITCODE -ne 0) { throw "Falha ao instalar o Ninja Narrator." }
+if ($LASTEXITCODE -ne 0) { throw "Falha ao instalar o NinjaSoft Narrator." }
 
 & $venvPython -c "import torch; print('PyTorch:', torch.__version__); print('CUDA:', torch.cuda.is_available()); print('Dispositivo:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU')"
 

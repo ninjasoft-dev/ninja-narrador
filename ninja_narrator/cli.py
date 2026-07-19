@@ -1,4 +1,4 @@
-"""Interface de linha de comando do Ninja Narrator."""
+"""Interface de linha de comando do NinjaSoft Narrator."""
 
 from __future__ import annotations
 
